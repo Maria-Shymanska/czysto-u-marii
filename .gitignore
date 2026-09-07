@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.prerender/
+*.tsbuildinfo
+.env
+.env.local
+.vscode
