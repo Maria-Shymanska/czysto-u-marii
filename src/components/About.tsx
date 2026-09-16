@@ -1,32 +1,37 @@
-export default function About() {
+import type { Translation } from "../data/translations";
+
+interface AboutProps {
+  t: Translation;
+}
+
+export default function About({ t }: AboutProps) {
   return (
     <section id="o-mnie" className="about">
       <div className="wrap about-grid">
         <div className="about-title">
-          <p className="eyebrow">POZNAJMY SIĘ</p>
+          <p className="eyebrow">{t.aboutEyebrow}</p>
+
           <h2 className="about-heading">
-            Wiesz, komu powierzasz{" "}
-            <span className="about-heading-accent">swój dom.</span>
+            {t.aboutTitle}{" "}
+            <span className="about-heading-accent">{t.aboutTitleAccent}</span>
           </h2>
+
           <span className="signature">Maria</span>
         </div>
+
         <div className="about-copy">
-          <h3>Cześć, jestem Maria.</h3>
-          <p>
-            Od wielu lat zajmuję się sprzątaniem. Wiem, że wpuszczenie kogoś do
-            swojego domu wymaga zaufania — dlatego zależy mi na jasnych
-            ustaleniach i dobrym kontakcie.
-          </p>
-          <p>
-            W Czysto u Marii rozmawiasz bezpośrednio ze mną. Wspólnie ustalamy,
-            czego potrzebujesz i na czym najbardziej Ci zależy.
-          </p>
+          <h3>{t.aboutGreeting}</h3>
+
+          <p>{t.aboutParagraph1}</p>
+          <p>{t.aboutParagraph2}</p>
+
           <div className="about-detail">
             <span aria-hidden="true">✳</span>
+
             <p>
-              Każdy dom jest inny.
+              {t.aboutDetail}
               <br />
-              <strong>Najpierw słucham, potem sprzątam.</strong>
+              <strong>{t.aboutDetailStrong}</strong>
             </p>
           </div>
         </div>
