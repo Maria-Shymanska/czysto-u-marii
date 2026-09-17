@@ -10,6 +10,7 @@ import About from "./components/About";
 import HowItWorks from "./components/HowItWorks";
 import FAQ from "./components/FAQ";
 import ContactForm from "./components/ContactForm";
+import FloatingContact from "./components/FloatingContact";
 import Footer from "./components/Footer";
 import { services } from "./data/site";
 
@@ -55,6 +56,7 @@ export default function App() {
         />
       </main>
       <Footer t={t} />
+      <FloatingContact t={t} />
     </>
   );
 }

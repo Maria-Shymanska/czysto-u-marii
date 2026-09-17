@@ -80,6 +80,11 @@ export interface Translation {
   // ===== FOOTER =====
   footerText: string;
   footerServices: string;
+
+  // ===== FLOATING CONTACT =====
+  contactWrite: string;
+  contactEmail: string;
+  contactCall: string;
 }
 
 
@@ -203,6 +208,10 @@ export const translations: Record<Language, Translation> = {
     // ===== FOOTER =====
     footerText: "Z troską o Twój dom.",
     footerServices: "Poznaj usługi",
+    // ===== FLOATING CONTACT =====
+    contactWrite: "Napisz do mnie",
+    contactEmail: "Napisz e-mail",
+    contactCall: "Zadzwoń",
   },
 
   en: {
@@ -323,6 +332,10 @@ export const translations: Record<Language, Translation> = {
     // ===== FOOTER =====
     footerText: "With care for your home.",
     footerServices: "Explore services",
+    // ===== FLOATING CONTACT =====
+    contactWrite: "Contact me",
+    contactEmail: "Send an e-mail",
+    contactCall: "Call me",
   },
 
   uk: {
@@ -425,6 +438,10 @@ export const translations: Record<Language, Translation> = {
     // ===== FOOTER =====
     footerText: "З турботою про твій дім.",
     footerServices: "Переглянути послуги",
+    // ===== FLOATING CONTACT =====
+    contactWrite: "Написати мені",
+    contactEmail: "Написати e-mail",
+    contactCall: "Зателефонувати",
 
     // ===== CONTACT FORM =====
     contactEyebrow: "ПОЧНІМО З РОЗМОВИ",
@@ -565,5 +582,9 @@ export const translations: Record<Language, Translation> = {
     // ===== FOOTER =====
     footerText: "Mit Sorgfalt für dein Zuhause.",
     footerServices: "Leistungen entdecken",
+    // ===== FLOATING CONTACT =====
+    contactWrite: "Schreib mir",
+    contactEmail: "E-Mail schreiben",
+    contactCall: "Anrufen",
   },
 };
